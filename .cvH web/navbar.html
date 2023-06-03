@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        /* .container{
+            background: rgb(0, 0, 0);
+           
+        }
+
+        .container ul{
+            overflow: auto;
+        }
+        .container li{
+            list-style-type: none;
+            float: left;
+            padding: 10px 30px;
+            padding-top:20px ;
+        }
+
+        .container li a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .container .search {
+            padding: 10px;
+            float: right;
+          
+        }
+
+        .container #Search{
+            border-radius: 10px;
+            padding: 10px;
+        } */
+
+
+        .container{
+            display: flex;
+            align-items:center;
+            justify-content: space-around;
+            background-color: black;
+        }
+       .container ul{
+         display: flex;
+         padding: 10px;
+         justify-content: space-between;
+       } 
+
+       .container ul li{
+        list-style-type: none;
+        padding: 10px 30px;
+        
+       }
+
+       .container ul li a{
+        text-decoration: none;
+        color: #fff;
+       }
+
+       .container #Search{
+        padding: 10px;
+        border-radius: 10px;
+       
+       }
+
+       .container .search{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+       }
+
+       .container .btn{
+        padding: 8px 10px;
+        margin-left: 10px;
+        border-radius:10px ;
+        background-color: white;
+       }
+        
+       .container .btn ,#btn:hover{
+        background-color: rgb(86, 176, 255);
+        cursor: pointer;
+       
+       }
+
+       .container #btn{
+        border: none;
+        background-color: transparent;
+       }
+       .BOX{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(102, 127, 255);
+       }
+
+       .box{
+       
+        border: 1px solid black;
+        height: 150px;
+        width: 150px;
+        margin: 2px;
+        position: absolute;
+       }
+
+       #box1{
+        position: relative;
+       
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Contact us</a></li>
+               
+            </ul>
+
+            <div class="search">
+                <input type="search" name="search" id="Search" placeholder="search">
+
+                <div class="btn">
+                    <button id="btn">Submit</button>
+                </div>
+            </div>
+
+           
+        </nav>
+    </header>
+
+    <div class="BOX">
+        
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom manipulation</title>
+</head>
+<body id="jk">
+    <ul id="element">
+        <li class="list_item">First element</li>
+        <li>Second element</li>
+        <li>Third element</li>
+    </ul>
+
+    <table>
+        <tr>
+            <td>One</td>
+            <td>two</td>
+        </tr>
+        <tr>
+            <td>three</td>
+            <td>four</td>
+        </tr>
+    </table>
+     <div class="alldiv">First Div</div>
+     <!-- <script>
+        const alldiv=document.getElementsByClassName('alldiv');
+        console.log(alldiv);
+     </script> -->
+    <script>
+        // //Root node
+        // console.log(document.documentelement);
+
+        // console.log(document.body);
+        // console.log(document.head);
+
+        // //childrens
+
+        // console.log(document.body.childNodes);
+
+        // console.log(document.body.children);
+
+
+        // console.log(document.body.firstElementChild);
+
+        // console.log(document.body.lastElementChild)
+
+        //sibling
+
+        // console.log(document.body.children[0]);
+        // const yash=document.body.children[0];
+        // console.log(yash.nextElementSibling);
+
+        // console.log(yash.nextElementSibling.textContent);
+
+        // const tableTag=document.body.children[1];
+
+        // console.log(tableTag);
+        // console.log(tableTag.tBodies);
+        // console.log(tableTag.tBodies[0].rows);
+        // console.log(tableTag.tBodies[0].rows[0].cells);
+        // console.log(tableTag.tBodies[0].rows[0].cells[0].textContent);
+        // console.log(element.style.nackground="red");
+        // element.style.background="red"
+
+        // console.log();
+
+        // const yash=document.getElementById("element");
+        // yash.style.backgroundColor='blue';
+        // console.log(yash);
+
+        // list=document.getElementsByClassName("list_item");
+
+        // console.log(list);
+
+        // console.log(document.getElementsByTagName('ul'));
+
+        // const yash=document.querySelector('.list_item');
+        // console.log(yash);
+
+        // const list=document.querySelectorAll('ul > li:last-child');
+        // const ya=document.querySelectorAll('ul > li:nth-child(1)');
+        // console.log(list);
+        // console.log(ya);
+
+        // console.log(element.getAttribute('data'));
+
+        // console.log(element.setAttribute('order-placed','pending'));
+        // console.log(element.hasAttribute('order-placed'));
+        // console.log(element.removeAttribute('order-placed'));
+
+        // creating , removing ,element
+
+        const newDiv=document.createElement('div');
+        // const Newtext=document.createTextNode('yash borate');
+        // newDiv.appendChild(Newtext);
+        // body.append(newDiv);
+        // body.prepend(newDiv);
+        // body.before(newDiv);
+        // jk.after(newDiv);
+
+        // alldiv.replace(Newtext);
+
+        newDiv.innerHTML=` <ul id="element">
+        <li class="list_item">First element</li>
+        <li>Second element</li>
+        <li>Third element</li>
+    </ul>`;
+
+    jk.append(newDiv);
+   
+
+
+
+    </script>
+</body>
+</html>

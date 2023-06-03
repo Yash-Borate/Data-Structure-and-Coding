@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oncllick</title>
+</head>
+<body>
+     <button id="Click_btn" onclick="alert('namaste world')">click in</button>
+    
+     <script>
+        // function callMe(){
+        //     alert('thanks for spreading');
+        // }
+
+        // Click_btn.onclick=callMe;
+
+        // //events
+        // Click_btn.onclick=callMe;  //pass function
+
+        // Click_btn.addEventListener('click',callMe);
+        // Click_btn.addEventListener('click',function(){
+        //     alert('have a good day');
+        // })
+        // Click_btn.removeEventListener('click',callMe);
+
+        // Click_btn.removeEventListener('click',function(){
+        //     alert('have a good day');
+        // })
+
+        function callMe(event){
+            console.log(event.type);
+            console.log(event.currentTarget);
+            console.log(event.clientY);
+            console.log(event.clientX);
+            alert('thanks for spreading');
+        }
+
+        Click_btn.addEventListener('click',callMe);
+        
+     </script>
+</body>
+</html>

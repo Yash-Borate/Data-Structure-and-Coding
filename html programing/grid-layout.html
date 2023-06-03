@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-layout</title>
+
+    <style>
+
+        .container{
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+            grid-auto-rows: minmax(200px,auto);
+            grid-auto-columns: minmax(200px,auto);
+        }
+
+        .item{
+            background-color: gray;
+            border-radius: 10px;
+            border: 2px solid blueviolet;
+        }
+
+        #item-1{
+            grid-row-start: 1;
+            grid-row-end: 3 ;
+        }
+        #item-3{
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+        #item-4{
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        #item-5{
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        #item-2{
+            grid-column-start: 3;
+            grid-row-start: 1  ;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="item-1">yash</div>
+        <div class="item" id="item-2">ganesh</div>
+        <div class="item" id="item-3">karan</div>
+        <div class="item" id="item-4">chandu</div>
+        <div class="item" id="item-5"> shirpa</div>
+        
+    </div>
+</body>
+</html>

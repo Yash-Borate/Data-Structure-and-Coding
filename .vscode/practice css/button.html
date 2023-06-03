@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button yash</title>
+    <style>
+        button{
+
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            text-align: center;
+            border: 2px solid rgb(255, 232, 28);
+            background: rgb(255, 232, 28);
+            color: rgba(0, 0, 200, 0.6);
+            border-radius:10px;
+            padding: 3px 10px;
+            display: inline-block;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    
+    <button>yash sapcifier</button>
+
+    <script>
+        let namaste =document.querySelector('button');
+        namaste.addEventListener('click',inputMsg);
+
+        function showMsg(){
+            alert("yash bro");
+        }
+
+        function inputMsg(){
+            let name=prompt('Enter name of student ');
+            namaste.textContent='roll no 1 : '+name;
+        }
+
+
+    </script>
+
+</body>
+</html>

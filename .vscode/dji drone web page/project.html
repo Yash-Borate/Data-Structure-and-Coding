@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dji drone web page</title>
+    <style>
+       *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      
+       }
+
+       
+       .BAck{
+        
+        justify-content: space-between;
+        height: 100vh;
+        width: 100%;
+        background-position: center;
+        
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation: fade 15s infinite;
+
+       }
+       @keyframes fade{
+        0%{
+          background-image: url(./camera\ dji.jpg);
+
+        }
+        /* 24%{
+          background-image: url(./camera\ dji.jpg);
+        } */
+
+        25.10%{
+          
+          
+          background-image: url(./dji\ drone\ 4.jpg);
+
+        }
+        /* 50%{
+          background-image: url(./dji\ drone\ 4.jpg);
+        } */
+
+        50.10%{
+          background-image: url(./dji\ camera\ 2.jpg);
+
+        }
+        /* 75%{
+          background-image: url(./dji\ drone\ 5.webp);
+        } */
+
+        75.10%{
+          background-image: url(./dji\ drone3.jpg);
+
+        }
+        100%{
+          background-image: url(./camera\ dji.jpg);
+        }
+        
+        }
+        
+
+      
+       
+
+       .navbar{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        width: 100%;
+        padding-left:50px;
+       }
+      nav ul {
+        display: flex; 
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        
+
+      }
+      nav ul li a{
+       padding: 10px 10px 10px 10px ;
+        text-decoration: none;
+        color: rgb(240, 231, 231);
+       font-size: 15px;
+        
+      }
+      nav ul li{
+        list-style-type: none;
+        font-family: Verdana, Geneva, Tahoma, sans-serif
+      }
+      
+      .but{
+        
+        padding: 10px;
+        border: 0px;
+        color: white;
+        font-size: 15px;
+        border-radius: 5px;
+        background-color: rgb(52, 174, 255);
+        
+      }
+      .butN{
+        
+        padding: 5px;
+        border: 0px;
+        color: white;
+        font-size: 15px;
+        border-radius: 5px;
+        background-color: rgb(52, 174, 255);
+        
+      }
+      .btn{
+        padding-right: 100px;
+        color: white;
+        font-size: 30px;
+        
+      }
+      .btn_1{
+        display: block;
+        
+        color: white;
+        font-size: 30px;
+        
+      }
+      .logo{
+        padding-right:90px ;
+       }
+       .btn .but:hover{
+        background-color: rgb(34, 172, 37);
+       
+        transition: 0.3s;
+        cursor: pointer;
+        bottom: 10px;
+        border-radius: 30px;
+       }
+      
+       .nav_li li a:hover{
+        
+        border-radius: 10px;
+        transition: 0.5s;
+       
+        
+        background-color: rgb(132, 209, 237);
+
+       }
+       .containt{
+        position: absolute;
+        width: 100%;
+        top: 15%;
+        padding: 10px;
+        text-align: center;
+       }
+      .nav_li li{
+        display: none;
+      }
+
+      @media all and (min-width:850px){
+        .nav_li li{
+          display: block;
+        }
+        .btn_1{
+          display: none;
+        }
+      }
+      @media all and (max-width:850px){
+        .btn{
+          padding: 0;
+        }
+        
+        .but{
+          padding:5px ;
+        }
+        .containt {
+        
+        width: 100%;
+        top: 15%;
+        padding: 50px;
+        text-align: center;
+      }
+        .yash button{
+          margin: 5px;
+        }
+      }
+
+      .containt p,h1,h3{
+        padding: 5px;
+        color: #FFF;
+      }
+      .containt p{
+        
+       font-size: 20px;
+       font-weight: 1;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+      .containt h1{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 50px;
+        letter-spacing: 3px;
+      }
+      .containt h3{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 1;
+        padding-bottom: 25px;
+      }
+      .containt .yash button{
+       
+        border: 1px solid #FFF;
+        padding: 10px 40px;
+        background: transparent;
+        color: white;
+        border-radius: 20px;
+  
+      }
+      .containt .yash button:hover{
+        background-color: rgba(255, 255, 255, 0.352);
+        transition: 0.3s;
+        color: #FFFFFFFF;
+        
+      }
+
+    /* =============================================================================================================== */
+    .box1{
+        background-image: url(./new\ bag\ 1);
+      }
+      .box2{
+        background-image: url(./new\ bag\ 2);
+      }
+      .box3{
+        background-image: url(./new\ bag\ 3);
+      }
+      .box4{
+        background-image: url(./new\ bag\ 4);
+      }
+
+      .box1 , .box2 , .box3 , .box4 {
+        
+        height: 75vh;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+       margin: 15px 10px;
+      }
+
+      .boxmain1{
+        display: flex;
+        width: 100%;
+        justify-items: space-around;
+      }
+      .boxmain2 {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      @media all and (max-width:800px){
+        .boxmain1{
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-items: space-around;
+        }
+        
+      }
+      @media all and (max-width:800px){
+        .boxmain2{
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-items: space-around;
+        }
+      }
+      /* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+      
+      .box1 {
+        
+        width: 100%;
+        top: 15%;
+        padding: 50px;
+        text-align: center;
+      }
+
+      .box1 #p{
+        
+        font-size: 10px;
+        letter-spacing: 3px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        
+      }
+      .box1 .head1{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 50px;
+     }
+
+     .box1 .head3{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 1;
+        padding-bottom: 10px;
+     }
+
+     .box1 .BoxBut button{
+       border: transparent;
+        padding: 0px  10px;
+        background: transparent;
+        color: rgb(101, 97, 97);
+        border-radius: 20px;
+     }
+
+     .box1 .BoxBut button:hover{
+        color:#fff;
+     }
+     
+     /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+     .box2 {
+        
+        width: 100%;
+        top: 15%;
+        padding: 50px;
+        text-align: center;
+      }
+
+      .box2 #p{
+        
+        font-size: 10px;
+        letter-spacing: 3px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        
+      }
+      .box2 .head1{
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 50px;
+     }
+
+     .box2 .head3{
+      color: black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 1;
+        padding-bottom: 10px;
+     }
+
+     .box2 .BoxBut button{
+       border: transparent;
+        padding: 0px  10px;
+        background: transparent;
+        color: rgb(138, 133, 133);
+        border-radius: 20px;
+     }
+
+     .box2 .BoxBut button:hover{
+        color:#fff;
+     }
+
+     /* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+     .box3 {
+        
+        width: 100%;
+        top: 15%;
+        padding: 50px;
+        text-align: center;
+      }
+
+      .box3 #p{
+        
+        font-size: 10px;
+        letter-spacing: 3px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        
+      }
+      .box3 .head1{
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 50px;
+     }
+
+     .box3 .head3{
+      color: black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 1;
+        padding-bottom: 10px;
+     }
+
+     .box3 .BoxBut button{
+       border: transparent;
+        padding: 0px  10px;
+        background: transparent;
+        color: rgb(138, 133, 133);
+        border-radius: 20px;
+     }
+
+     .box3 .BoxBut button:hover{
+        color: #fff;
+     }
+
+     /* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+     .box4 {
+        
+        width: 100%;
+        top: 15%;
+        padding: 50px;
+        text-align: center;
+      }
+
+      .box4 #p{
+        color: black;
+        font-size: 10px;
+        letter-spacing: 3px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        
+      }
+      .box4 .head1{
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 50px;
+     }
+
+     .box4 .head3{
+      color: black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 1;
+        padding-bottom: 10px;
+     }
+
+     .box4 .BoxBut button{
+       border: transparent;
+        padding: 0px  10px;
+        background: transparent;
+        color: rgb(138, 133, 133);
+        border-radius: 20px;
+     }
+
+     .box4 .BoxBut button:hover{
+        color: #fff;
+     }
+
+     /* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+     /* SECTION 4 */
+
+     .Head_4{
+            font-size: 30px;
+            text-align: center;
+            padding: 10px;
+            margin:10px;
+            color: black;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .container_4{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 10px;
+            margin: 10px;
+        }
+        .zoom_1,.zoom_2,.zoom_3{
+            height: 73vh;
+            width:100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 10px;
+        }
+        .zoom_1{
+            background-image: url(./section\ 4_1.webp);
+           
+            margin: 20px 10px 20px 165px;
+        }
+        .zoom_2{
+            background-image: url(./section\ 4_2.webp);
+            
+            margin: 20px 10px;
+        }
+        .zoom_3{
+            background-image: url(./section\ 4_3.webp);
+           
+            margin: 20px  165px 20px 10px;
+        }
+
+        .zoom_1,.zoom_2,.zoom_3 {
+        
+        width: 100%;
+        top: 15%;
+        padding: 50px;
+        text-align: center;
+        color: #fff;
+        }
+
+        .zoom_1 h1{
+            font-family: 'Quicksand', sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        
+        }
+        .zoom_2 h1{
+            font-family: 'Quicksand', sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+       
+        }
+
+        .zoom_3 h1{
+            font-family: 'Quicksand', sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+       
+        }
+/* //////////////////////////////////////////////////////////////////////// */
+        .zoom_1 #yB{
+        font-family: 'Abel', sans-serif;
+        font-weight: 1;
+        padding-top:10px;
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        }
+
+     
+        .zoom_1 .btnZ button{
+        border: transparent;
+        padding: 0px  20px;
+        background: transparent;
+        color: rgb(101, 97, 97);
+        font-size: 15px;
+        }
+        .zoom_1 .btnZ{
+            margin: 20px;  
+        }
+        .zoom_1 .btnZ button:hover{
+            color: #fff;
+            text-decoration: underline;
+        }
+        /* //////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+        .zoom_2 #yB{
+            font-family: 'Abel', sans-serif;
+        font-weight: 1;
+        padding-top:10px;
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        }
+
+      
+        .zoom_2 .btnZ button{
+        border: transparent;
+        padding: 0px  20px;
+        background: transparent;
+        color: rgb(101, 97, 97);
+        font-size: 15px;
+        }
+        .zoom_2 .btnZ{
+            margin: 20px;  
+        }
+        .zoom_2 .btnZ button:hover{
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        /* ////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+        .zoom_3 #yB{
+            font-family: 'Abel', sans-serif;
+        font-weight: 1;
+        padding-top:10px;
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        }
+
+     
+        .zoom_3 .btnZ button{
+        border: transparent;
+        padding: 0px  20px;
+        background: transparent;
+        color: rgb(101, 97, 97);
+        font-size: 15px;
+        }
+        .zoom_3 .btnZ{
+            margin: 20px;  
+        }
+        .zoom_3 .btnZ button:hover{
+            color: #fff;
+            text-decoration: underline;
+        }
+
+
+        /* /////////////////////////////////////////////////////////////////////////// */
+
+        @media all and (max-width:900px){
+
+        .Head_4{
+            padding: 5px;
+            margin: 5px;
+        }
+        .container_4{
+                display: flex;
+                flex-flow: column;
+                padding: 0;
+                margin: 0;
+            }
+        .zoom_1{
+           
+            padding: 60px 20px;
+            margin: 10px;
+    
+        }
+        .zoom_2{
+            padding: 60px 20px;
+            
+            margin: 10px;
+        }
+        .zoom_3{
+            padding: 60px 20px;
+            margin:10px;
+        }
+
+       
+        }
+
+        /* ////////////////////////////////////////////////////////////////////////////// */
+        @media all and (min-width:901px){
+        .zoom_1:hover{
+           width: 150%;
+            transition: 0.9s;
+        }
+        .zoom_2:hover{
+           width: 150%;
+            transition: 0.9s;
+        }
+        .zoom_3:hover{
+           width: 150%;
+            transition: 0.9s;
+        }
+    }
+        
+    /* //////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+    /* section 5 */
+
+    .container_5{
+            display: flex;
+            margin-top: 20px;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .Sec1{
+            padding: 10px;
+            margin: 20px 10px 20px 165px;
+            height: 250px;
+            width: 250px;
+            text-align: center;
+            font-family: 'Quicksand', sans-serif;
+        }
+        .Sec3{
+            padding: 10px;
+            margin: 20px  165px 20px 10px;
+            height: 250px;
+            width: 250px;
+            text-align: center;
+            font-family: 'Quicksand', sans-serif;
+        }
+        .Sec2{
+            padding: 10px;
+            margin: 20px 10px;
+            height: 250px;
+            width: 250px;
+            text-align: center;
+            font-family: 'Quicksand', sans-serif;
+           
+        }
+
+        .Sec1 h1{
+            margin: 10px;
+            color: black;
+        }
+        .Sec2 h1{
+            margin: 10px;
+            color: black;
+        }
+        .Sec3 h1{
+            margin: 10px;
+            color: black;
+        }
+
+        .Sec1 button{
+            border: transparent;
+            background-color: transparent;
+            padding: 10px;
+            font-size: 15px;
+            
+        }
+        .Sec2 button{
+            border: transparent;
+            background-color: transparent;
+            padding: 10px;
+            font-size: 15px;
+            
+        }
+
+        .Sec3 button{
+            border: transparent;
+            background-color: transparent;
+            padding: 10px;
+            font-size: 15px;
+            
+        }
+
+        @media all and (max-width:900px){
+            .container_5{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                
+            }
+            .Sec1{
+                display: flex;
+                padding: 10px;
+                margin: 10px;
+                
+            }
+            .Sec2{
+                display: flex;
+                padding: 10px;
+                margin: 10px;
+            }
+            .Sec3{
+                display: flex;
+                padding: 10px;
+                margin: 10px;
+            }
+
+            .Sec1 img{
+                height: 90px;
+                width: 90px;
+            }
+            .Sec1 h1{
+               
+                height: 90px;
+                text-align: center;
+                padding: 10px;
+                margin: 10px;
+                
+            }
+            .Sec1 button span{
+                display: none;
+            }
+            .Sec1 button{
+                text-align: center;
+                padding: 10px;
+                margin: 10px;
+                height: 90px;
+               
+            }
+            
+
+
+            .Sec2 img{
+                height: 90px;
+                width: 90px;
+            }
+            .Sec2 h1{
+                width: 500px;
+                height: 90px;
+                text-align: center;
+                padding: 25px;
+               
+            }
+            .Sec2 button span{
+                display: none;
+            }
+            .Sec2 button{
+                text-align: center;
+                padding: 10px;
+                margin: 10px;
+                height: 90px;
+               
+            }
+
+
+            .Sec3 img{
+                height: 90px;
+                width: 90px;
+            }
+            .Sec3 h1{
+                width: 500px;
+                height: 90px;
+                padding: 10px;
+                margin: 10px;
+                
+            }
+            .Sec3 button span{
+                display: none;
+            }
+            .Sec3 button{
+                text-align: center;
+                padding: 10px;
+                margin: 10px;
+                height: 90px;
+               
+            }
+
+        }
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+        /* footer */
+
+        .footer{
+            background-color: #24262b;
+            padding-top: 70px ;
+        }
+        .container_Footer{
+            max-width: 1300px;
+            
+            margin: auto;
+        }
+        .container_Footer ul{
+            list-style-type: none;
+        }
+
+        .row_1{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .footer_col{
+            padding:0 15px ;
+            width: 25%;
+        }
+        .footer_col h4{
+            font-size: 14px;
+            margin: 10px 0;
+            color: #ffff;
+            text-transform: capitalize;
+            font-family: 'Quicksand', sans-serif;
+        }
+        .container_Footer li a{
+            text-decoration: none;
+            color: #78797a;
+            margin: 10px 0;
+            font-size: 15px;
+            font-family:'Quicksand', sans-serif ;
+            
+        }
+        .container_Footer li {
+            text-decoration: none;
+            color: #78797a;
+            margin: 10px 0;
+            font-size: 15px;
+            font-family:'Quicksand', sans-serif ;
+            
+        }
+        .Ul_1{
+            display: flex;
+            padding: 10px;
+            margin: 10px;
+            align-items: center;
+        }
+
+        .navbar_2{
+            display: flex;
+            flex-direction: row;
+            
+        }
+        .navbar_2 li {
+
+           padding: 10px;
+        }
+
+       
+        .Ul_2{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .Ul_2 li{
+            font-size: 15px;
+        
+        }
+        .Ul_1 img{
+          align-content: center;
+        }
+       
+/* 
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+        .Sec_btn button:hover{
+          color: #78797a;
+          font-size: 20px;
+          transition: 0.5s;
+        }
+      
+        /* ///////////////////////////////////////////////////////////////////////////////// */
+
+        .footer_col li a:hover{
+          color: #FFF;
+        }
+
+        @media all and (max-width:900px){
+          .Ul_1 li{
+            font-size: 10px;
+            padding: 8px;
+          }
+          .Ul_1 img{
+            align-items: center;
+            padding:1px ;
+          }
+          .Ul_1{
+          
+           padding: 5px;
+           margin: 5px;
+          }
+
+        .Ul_2 li{
+            font-size: 10px;
+            padding: 8px;
+          }
+          .Ul_1{
+            
+           padding: 5px;
+            margin: 5px;
+         
+        }
+        .footer_col ul li a{
+          font-size: 10;
+        }
+        }
+
+        .Name_tag{
+          align-items: flex-end;
+          display: flex;
+          justify-content: space-around;
+          color: #fff;
+          padding: 10px;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          opacity: 0.9;
+        }
+
+
+    </style>
+</head>
+<body>
+  
+   <section class="section1">
+    <div class="BAck">
+      <div class="navbar">
+        
+          <nav>
+            
+            <div>
+              <ul class="nav_li">
+                
+                <img class="logo" src="./logo new.png" alt="" height="23px" widht="25px">
+
+                <li><a href="#">CameraDrones</a></li>
+                <li><a href="#">Handheld</a></li>
+                <li><a href="#">Specialized</a></li>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">Support</a></li>
+                
+                
+            </ul>
+           
+            </div> 
+           
+            
+          </nav>
+          <a href="#" class="btn_1"><button class="butN">Home</button></a>
+          <a href="#" class="btn"><button class="but">Store </button></a>
+      </div>
+      <div class="containt">
+        
+  
+        <div class="Sec">
+          <p>New Release-Mini Drone And Cameras</p>
+          <h1>WELCOME IN DJI WORLD</h1>
+          <h3>Fly Mini,Create Big</h3>
+          <div class="yash">
+            <button >Learn More  ></button>
+            <button>Buy Now  ></button>
+        </div>
+  
+       <!-- <div class="section1">
+        <p>Magnetic Action Camera</p>
+        <h1>DJI ACTION 2</h1>
+        <h3>More Than Action </b></h3>
+        <div class="yash">
+          <button >Learn More</button>
+          <button>Buy Now</button>
+        </div>
+       </div>
+  
+      <div class="section1">
+        <h1>AGRAS T30</h1>
+          <h3>A New Flagship For New Agriculture </b></h3>
+          <div class="yash">
+            <button >Learn More</button>
+            
+          </div>
+      </div>
+  
+        <div class="section1">
+          <p>Enterprise Flagship</p>
+          <h1>M30 SERIES</h1>
+          <h3>For Everyday Heroes</b></h3>
+          <div class="yash">
+            <button >Learn More</button>
+            <button>Buy Now</button>
+          </div>
+        </div>
+         
+      </div> -->
+    </div>
+   </section>
+   
+   <div class="products">
+    <div class="boxmain1">
+     <div class="box1">
+         <p id="p">Flagship Camera Drone</p>
+         <p class="head1">DJI Mavic 3</p>
+         <p class="head3">Imagine Above Everything</p>
+         <div class="BoxBut">
+           <button >Learn More ></button>
+           <button>Buy Now ></button>
+         </div>
+     </div>
+     
+     <div class="box2">
+         <p id="p">Immersive Flight Experience</p>
+         <h1 class="head1">DJI FPV</h1>
+         <h3 class="head3">Redefine Flying</h3>
+         <div class="BoxBut">
+           <button >Learn More ></button>
+           <button>Buy Now ></button>
+         </div>
+     </div>
+    </div>
+
+    <div class="boxmain2">
+      <div class="box3">
+         <p id="p">4-Axis cinema Camera</p>
+         <h1 class="head1">DJI Ronin 4D</h1>
+         <h3 class="head3">The Future Is Rolling</h3>
+         <div class="BoxBut">
+           <button >Learn More ></button>
+           <button>Buy Now ></button>
+         </div>
+        </div>
+   
+   
+        <div class="box4">
+         <p id="p">Product INfo</p>
+         <h1 class="head1">Compare Camera Drones</h1>
+         <h3 class="head3">See product overview and comparisons here</h3>
+         <div class="BoxBut">
+           
+           <button>learn more ></button>
+         </div>
+        </div>
+    </div>
+
+
+ </div>
+   
+
+ <section class="section_4">
+  <h1 class="Head_4">Explore Dji products in Different fileds</h1>
+  <div class="container_4">
+      <div class="zoom_1">
+          <h1>Video Production</h1>
+          <p id="yB">Professional Arieal and Ground filmmaking Tools</p>
+          <div class="btnZ">
+              <button>Learn More ></button>
+          </div>
+      </div>
+      <div class="zoom_2">
+          <h1>Enterprises</h1>
+          <p id="yB">Drone Solution For a New Generation Of Work</p>
+          <div class="btnZ">
+              <button>Learn More ></button>
+          </div>
+      </div>
+      <div class="zoom_3">
+          <h1>Agriculture</h1>
+          <p id="yB">Efficient and Intelligent Agricultural Solution</p>
+          <div class="btnZ">
+              <button>Learn More > </button>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+<section class="section_5">
+  <div class="container_5">
+      
+          <div class="Sec1">
+              <img src="./section 5 logo 1.svg" alt="">
+              <h1>Where to buy</h1>
+              <div class="Sec_btn">
+                <button><span>Learn More</span> ></button>
+            </div>
+          </div>
+         
+      
+      
+          <div class="Sec2">
+              <img src="./section5 logo 2.svg" alt="">
+              <h1>Support</h1>
+              <div class="Sec_btn">
+                <button><span>Learn More</span> ></button>
+            </div>
+          </div>
+         
+      
+      
+          <div class="Sec3">
+              <img src="./section 5 logo 3.svg" alt="">
+              <h1>Fly Safe</h1>
+              <div class="Sec_btn">
+                <button><span>Learn More</span> ></button>
+            </div>
+      
+         
+          </div>
+    </div>
+</section>
+
+<footer class="footer">
+  <div class="container_Footer">
+      <div class="row_1">
+          <div class="footer_col">
+              <h4>Product Categories</h4>
+              <ul>
+                  <li><a href="#">Consumer</a></li>
+                  <li><a href="#">Professional</a></li>
+                  <li><a href="#">Enterprise</a></li>
+                  <li><a href="#">Components</a></li>
+              </ul>
+          </div>
+
+          <div class="footer_col">
+              <h4>Service plans</h4>
+              <ul>
+                  <li><a href="#">DJI Care Refresh</a></li>
+                  <li><a href="#">DJI Care Refresh +</a></li>
+                  <li><a href="#">DJI Care Pro</a></li>
+                  <li><a href="#">Osmo Shield</a></li>
+                  <li><a href="#">Osmo Shield</a></li>
+                  <li><a href="#">Dji Care Anterprises</a></li>
+                  <li><a href="#">DJI Maintenance Program</a></li>
+              </ul>
+          </div>
+
+          <div class="footer_col">
+              <h4>support</h4>
+              <ul>
+                  <li><a href="#">Product Support</a></li>
+                  <li><a href="#">Service Request and Inquiry</a></li>
+                  <li><a href="#">Help Center</a></li>
+                  <li><a href="#">After-Sales Service Policies</a></li>
+                  <li><a href="#">Download Center</a></li>
+                  <li><a href="#">Security and Privacy</a></li>
+              </ul>
+          </div>
+
+          <div class="footer_col">
+              <h4>Coorporation</h4>
+              <ul>
+                  <li><a href="#">Become a Dealer</a></li>
+                  <li><a href="#">Apply For Authorized Store</a></li>
+              </ul>
+          </div>
+      </div>
+
+      <div class="row_2">
+          <div class="navbar_2">
+              
+          <ul class="Ul_1">
+              <li><img src="./logo new.png" alt="" height="30px" width="30px"></li>
+              <li>Who We Are</li>
+              <li>Contact Us</li>
+              <li>Carrers</li>
+              <li>Dealer Portal</li>
+              <li>RoboMaster</li>
+              <li>DJI Entertainment</li>
+              <li>DJI Automative</li>
+          </ul>
+          
+          </div>
+          <hr>
+          
+          
+          <ul class="Ul_2">
+              <li> DJI Privacy Policy</li>
+              <li> Use of Cookies</li>
+              <li> Terms of Use</li>
+              <li>Business Information</li>
+              <li>CookiePreferences</li>
+              <li>Copyright © 2022 DJI All Rights Reserved.</li>
+              <li>Feedback on web experience</li>
+          </ul>
+      </div>
+
+     
+  </div>
+  <div class="Name_tag">made by Yash || with love </div>
+</footer>
+   
+</body>
+</html> 

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Croud_App</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .Img_b{
+            height: 500x;
+            width: 500px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+        .Btn{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px;
+            margin-top: 20px;
+            background: green;
+        }
+    </style>
+</head>
+<body style="background-color: black;">
+    <img id='bulb' src="./BG 0.1.jpg"  alt="" class="Img_b">
+    <button id="yash" class="Btn">Turn On</button>
+
+    <script>
+        let button=document.getElementById('yash');
+        let bulb=document.getElementById('bulb');
+        button.addEventListener('click',yashDrone)
+
+        function yashDrone(e){
+            if(button.textContent.includes('On')){
+                bulb.src="./BG 0.2.jpg";
+                button.textContent="Turn Off";
+            }
+            else{
+                bulb.src="./BG 0.1.jpg";
+                button.textContent="Turn On";
+            }
+           
+        }
+    </script>
+</body>
+</html>

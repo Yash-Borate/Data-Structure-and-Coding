@@ -1,0 +1,19 @@
+p{
+    color: blue;
+}
+a{
+ color: rgb(226, 83, 43);   
+}
+li{
+    list-style-type: square;
+}
+.yash{
+    font-weight: bold;
+    color: burlywood;
+}
+li.yash:hover{
+    color: blue;
+}
+li em{
+    color: purple;
+}

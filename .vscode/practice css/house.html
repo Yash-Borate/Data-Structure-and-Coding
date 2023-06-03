@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>design your drone site</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .banner{
+            height: 100vh;
+            width: 100%;
+            background-image:url(./camera\ dji.jpg) ;
+            background-size:cover;
+            background-position: right;
+            /* background-position-x: (-30%); */
+            
+        }
+        .navbar{
+            width: 85%;
+            margin: auto;
+            padding: 35px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo{
+            width: 120px;
+            cursor: pointer;
+            color: #ffff;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .navbar ul li{
+            list-style-type: none;
+            display: flex;
+            display: inline-block;
+            margin: 0 20px;      
+            position: relative;
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            color: #ffff;
+            text-transform: uppercase;
+        }
+        .navbar ul li::after{
+            content: '';
+            height: 3px;
+            width:0 ;
+            background-color: #009688;
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            transition: 0.5s;
+        }
+        .navbar ul li:hover::after{
+            width: 100%;
+        }
+        .content{
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: center;
+
+        }
+        .content h1{
+            font-size: 50px;
+            margin-top: 80px;
+            color: #fff;
+        }
+        .content p{
+            margin: 20px auto;
+            font-weight: 100;
+            line-height: 25px;
+            color: rgb(223, 234, 234);
+
+        }
+        button{
+            width: 200px;
+            font-weight: 100;
+            line-height: 25px;
+            border-radius: 25px;
+            font-weight: bold;
+            border: 2px solid #009688 ;
+            background: transparent;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+           <div class="logo">
+            <h1>yash</h1>
+           </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">contact</a></li>
+                <li><a href="#">New launch</a></li>  
+            </ul>
+        </div>
+        <div class="content">
+            <h1>CREATE YOUR PHOTOGRAPHY WORLD</h1>
+            <P>Build Your Own World of Photography with The Help Of Dji DSLR , <br> By some clicks</P>
+            
+            <div>
+                <button type="button">Add photos</button>
+                <button type="nutton">Like</button>
+            </div>
+        
+        </div>
+    </div>
+</body>
+</html>

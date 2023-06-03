@@ -1,0 +1,55 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container_1 .nav_bar ul{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 10px;
+}
+
+.container_1 .nav_bar ul li{
+    list-style-type: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container_1 .nav_bar ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 30px;
+    
+
+}
+.container_1 {
+    background: url('./img_car_web-page/nissan\ car.jpg');
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.heading_1{
+    margin: 150px 0px 0px 90px;
+    width: 340px;
+    
+}
+
+.heading_1 p{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    padding: 10px;
+    letter-spacing: 5px;
+}
+
+.heading_1 h1{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding: 0px 0px;
+    font-size: 60px;
+    line-height: 60px;
+}

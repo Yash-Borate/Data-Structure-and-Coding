@@ -1,0 +1,199 @@
+/* p,a{
+    color: chartreuse;
+}
+li{
+    list-style-type: circle;
+}
+.special{
+    color: brown;
+    font-weight: bold;
+}
+span.cyco{
+    color: cyan;
+    font-style: oblique;
+}
+li em{
+    color: blue;
+}
+h1+p+p{
+    font-size: larger;
+}
+a:hover{
+    color: aqua;
+    text-decoration: none;
+}
+
+body h1+p .special{
+    color: rgb(28, 209, 209);
+    background-color: rgb(12, 11, 11);
+    padding: 5px ;
+}
+#one{
+    color: blueviolet;
+    background : local;
+}
+p#two{
+    color: black;
+}
+li[class]{
+    font-size: 300%;
+}
+*{
+    font: bolder;
+    font-size: 100%;
+} */
+span.class{
+    color: antiquewhite;
+    font-style: oblique;
+}
+.special{
+    color: yellowgreen;
+    font-style:oblique;
+}
+body h1+p .special{
+    color: rgb(28, 209, 209);
+    background-color: rgb(12, 11, 11);
+    padding: 5px ;
+}
+#one{
+    color: aqua;
+}
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+     margin :10px 10px;
+    font-size: 17px;
+     padding: 8px; 
+     border-radius: 8px;
+} 
+.yash{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    border: 1px solid gray;
+    background-color: rgb(255, 238, 85);
+    border-radius: 5px;
+}
+fieldset{
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    background-color: aliceblue;
+}
+header h1{
+    text-align: center;
+    padding: 15px 20px;
+    margin: 10px;
+    background-color: rgb(87, 165, 255);
+    text-indent: 10px;
+    
+}
+nav{
+    background-color: rgb(2, 2, 2);
+    padding: 15px 10px;
+    margin: 5px;
+}
+nav a{
+    color: azure;
+    padding: 10px;
+    margin: 10px;
+}
+nav a:hover{
+    color: rgba(241, 59, 59, 0.938);
+}
+.gabnapati{
+    overflow: hidden;
+}
+main{
+   padding: 10px 15px;
+   margin: 15px;
+}
+footer{
+    background-color: rgb(64, 140, 255);
+    border: 1px solid black;
+    padding: 15px 20px;
+    margin: 5px;
+    overflow: hidden;
+}
+footer a{
+    color:azure;
+    padding: 5px 10px;
+    margin: 5px;
+    width: 100%;
+
+}
+footer a:hover{
+    color: green;
+}
+aside{
+    text-align: center;
+    padding: 10px 15px;
+    margin: 5px;
+
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea{
+    width: 100%;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid#ccc;
+    border-radius: 5px;
+}
+input[type="submit"]{
+    background-color: rgb(50, 252, 44);
+    color: aliceblue;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+input[type="submit"]:hover{
+    background-color: rgb(14, 206, 62);
+}
+#scroll-container {
+    border: 3px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  #scroll-text {
+    /* animation properties */
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    
+    -moz-animation: my-animation 15s linear infinite;
+    -webkit-animation: my-animation 15s linear infinite;
+    animation: my-animation 15s linear infinite;
+  }
+  
+  /* for Firefox */
+  @-moz-keyframes my-animation {
+    from { -moz-transform: translateX(100%); }
+    to { -moz-transform: translateX(-100%); }
+  }
+  
+  /* for Chrome */
+  @-webkit-keyframes my-animation {
+    from { -webkit-transform: translateX(100%); }
+    to { -webkit-transform: translateX(-100%); }
+  }
+  
+  @keyframes my-animation {
+    from {
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+    to {
+      -moz-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+ } 

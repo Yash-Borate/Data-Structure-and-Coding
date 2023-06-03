@@ -1,0 +1,134 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+body{
+    
+    height: 100vh;
+    width: 100%;
+    background: url('pexels-messina-photo-8170745.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 30px  ;
+    font-family: 'Lobster', cursive;
+    font-weight: 800;
+    color: white;
+}
+
+ .container ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+   
+}
+
+.container ul li{
+    list-style-type: none;
+    padding: 0px 20px ;
+}
+
+.container ul li a{
+    padding: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.9;
+}
+.container ul li a:hover{
+    opacity: 1;
+}
+
+.right{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around ;
+    padding: 10px 30px;
+    color: white;
+    
+}
+
+.right .btn{
+
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(183, 59, 255);
+    font-weight: 800;
+    opacity: 0.9;
+    color: white;
+}
+
+.right .btn:hover{
+    opacity: 1;
+    background-color: rgb(155, 0, 244);
+    font-weight: 800;
+}
+
+.box{
+    border: 1px solid rgb(255, 255, 255);
+    width: 35%;
+    margin: 90px 60px 10px 90px;
+    border-radius: 5px;
+    color: white;
+}
+
+.box h1{
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 10px 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.box .form-group{
+    margin: 30px;
+}
+
+.box .form-group input{
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 0.5px solid rgb(52, 50, 50);
+}
+
+.box .Sub--btn{
+    padding: 10px;
+    display: block;
+    margin: 5px auto;
+    margin-bottom: 10px;
+    width: 20%;
+    background-color:rgb(51, 91, 251);
+    border-radius: 10px;
+    border: transparent;
+    color: white;
+    transition: 0.3s all ease;
+    
+}
+
+.box .Sub--btn:hover{
+    background-color: rgb(23, 69, 255);
+    width: 30%;
+    transition: 1s;
+    border-radius: 15px;
+}
+
+footer{
+    color: white;
+}

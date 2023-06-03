@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple_web_page</title>
+    <link rel="stylesheet" href="Apple.css">
+</head>
+<body>
+    <div class="Container">
+        <nav>
+            <ul class="links">
+                <li><a href="#">Apple</a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">Mac</a></li>
+                <li><a href="#">ipad</a></li>
+                <li><a href="#">iphone</a></li>
+                <li><a href="#">Watch</a></li>
+                <li><a href="#">AirPods</a></li>
+                <li><a href="#">TV & Home</a></li>
+                <li><a href="#">Only on Apple</a></li>
+                <li><a href="#">Accessaries</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Search</a></li>
+                <li><a href="#">Buy</a></li>
+            </ul>
+        </nav>
+    </div>
+   <section class="main_info">
+    <div class="INfo">
+        <div class="Bol">
+          <h3>iPhone 13</h3>
+        </div>
+        <div class="bol2">
+            <ul>
+                <li >
+                    <a id="y" href="#">Overview</a>
+                </li>
+                <li>
+                   <a href="#" id="a"> Switching to iPhone</a>
+                </li>
+                <li>
+                    <a href="#" id="s">Tech specs</a>
+                </li>
+                <li>
+                    <button class="Btn">Buy</button>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+    <hr>
+    <div class="contain">
+       <p>
+        Get 5% instant Cashback up to ₹6000 with qualifying HDFC Bank credit cards on orders over ₹54900. 
+        <button id="But"><a href="#">Learn more ></a></button>
+       </p> 
+    </div>
+
+    <div class="container_A">
+
+        <div class="Main">
+            <div class="Main_text">
+                <h2 class="Ip">iPhone 13</h2>
+                <h1>Your new superpower.</h1>
+                <p class="para">A lightning-fast chip. A leap in battery life. And all-new photo and video capabilities. iPhone 13 lets you do things you never could before — in two great sizes.</p>
+                <h4>From ₹69900.00* before trade-in</h4>
+                <div  class="Btn_Buy">
+                    <button>Buy</button>
+                </div>
+           
+            </div>
+          
+        </div>
+     
+    </div>
+    <div class="carousel">
+        <div class="carousel_item carousel_item--visible">
+            <img src="./img/2.jpg" alt="">
+        </div>
+        <div class="carousel_item">
+            <img src="./img/3.jpg" alt="">
+        </div>
+        <div class="carousel_item">
+            <img src="./img/4.jpg" alt="">
+        </div>
+        <div class="carousel_item">
+            <img src="./img/5.jpg" alt="">
+        </div>
+        <div class="carousel_item">
+            <img src="./img/6.jpg" alt="">
+        </div>
+
+        <div class="carousel_actions">
+            <button id="carousel_button--prev" aria-label="previous slide"><</button>
+            <button id="carousel_button--next" aria-label="next slide">></button>
+
+        </div>
+    </div>
+
+    
+   </section>
+   <script>
+    let slidePosition=0;
+
+    const slides=document.getElementsByClassName('carousel_item');
+    const totalslides=slides.length;
+
+    document.getElementById('carousel_button--prev')
+    .addEventListener('click',function(){
+       moveToPrevSlide();
+    });
+
+    document.getElementById('carousel_button--next')
+    .addEventListener('click',function(){
+       moveToNextSlide();
+    });
+
+    function updateSlidePosition(){
+        for(let slide of slides){
+            slide.classList.remove('carousel_item--visible');
+            slide.classList.add('carousel_item--hidden');
+        }
+        slides[slidePosition].classList.add('carousel_item--visible')
+    };
+
+    function moveToNextSlide(){
+
+      
+        if(slidePosition==totalslides-1){
+            slidePosition=0;
+        }
+        else{
+            slidePosition++;
+        }
+
+        updateSlidePosition();
+    }
+
+    function moveToPrevSlide(){
+        
+        if(slidePosition==0){
+            slidePosition=totalslides-1;
+        }
+        else{
+            slidePosition--;
+        }
+        updateSlidePosition();
+    }
+    
+    
+
+</script>
+</body>
+</html>

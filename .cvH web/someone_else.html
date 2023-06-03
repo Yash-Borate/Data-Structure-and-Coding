@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box property</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            border: 1px solid black;
+            margin: 30px;
+        }
+        h1
+        {
+            padding: 10px;
+        }
+        #Name{
+            width: 150px;
+            
+        }
+        .name,.password,.info,.chk,.sub{
+            font-size: 18px;
+           margin: 40px;
+        }
+        #sum{
+            width: 90px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+       
+        <h1>Operating system information</h1>
+        <p class="name">Enter your name <input type="button" value="" id="Name"></p>
+        <p class="password">password <input type="password" name="" id="pass"></p>
+        <p class="info">Which of the following Operating System have you used </p>
+        <p class="chk"><input type="checkbox" name="" id="chek">Linux <input type="checkbox" name="" id="chek">Windows 10 <input type="checkbox" name="" id="chek">Macintosh 8.0</p>
+        <p class="sub">You have completed the form <input type="submit" value="" id="sum" placeholder="sign up" ></p>
+
+    </div>
+</body>
+</html>

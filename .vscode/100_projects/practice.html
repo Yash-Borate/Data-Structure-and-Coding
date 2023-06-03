@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .nabar .links{
+            display: flex;
+           
+            justify-content: space-around;
+            align-items: center;
+        }
+        li{
+            list-style-type: none;
+        }
+
+        .mid{
+            display: block;
+            width: 10%;
+            position: absolute;
+            margin: 10px 50%;
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <div class="nabar">
+        <ul class="links">
+        <li class="nav">yash</li>
+        <li class="nav">yash</li>
+        <li class="nav">yash</li>
+        <li class="nav">yash</li>
+        <li class="nav">yash</li>
+        </ul>
+    </div> -->
+
+    <div class="mid">
+        yash 
+    </div>
+
+    <script>
+        let slidesposition=0;
+
+        const slides=document.getElementsByClassName('yash');
+        const totalslides=slides.length;
+
+        document.getElementById('carousel_prev').addEventListener('click',function(){
+            movetoprev();
+        });
+
+        document.getElementById('carousel_next').addEventListener('click',function(){
+            movetonext();
+        });
+
+        function update(){
+            for(let slide of slides){
+                slide.classList.remove('carousel_visible');
+
+                slide.classList.add('carousel_hidden');
+            }
+
+            slides[slidesposition].classList.add('carousel_visible');
+        };
+
+        function movetoprev(){
+            if(slidesposition==0){
+                slidesposition=totalslides-1;
+            }
+            else{
+                slidesposition--;
+            }
+
+            update();
+        }
+
+        function movetonext(){
+            if(slidesposition==totalslides-1){
+                slidesposition=0;
+            }
+            else{
+                    slidesposition++;
+
+            }
+            update();
+        }
+
+
+
+    </script>
+</body>
+</html>
